@@ -1,0 +1,8 @@
+<div>
+  <button (click)="startClicked()">Start</button>
+  <button (click)="stopClicked()">Stop</button>
+  <button id="wait">Wait</button>
+  <button (click)="resetClicked()">Reset</button>
+</div>
+
+<span>{{secondsToHms((currentSecond | async).state)}}</span>
